@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Cadastro</title>
+</head>
+
+<body>
+
+  <h1>Cadatre-se</h1>
+  <div>
+    <a href="./index.html">Voltar</a>
+  </div>
+
+  <form action="" method="post">
+    <label for="nome">Nome*:</label>
+    <input type="text" name="nome" id="nome" required> <br>
+
+    <label for="email">Email*:</label>
+    <input type="email" name="email" id="email" required> <br>
+
+    <label for="senha">Senha*:</label>
+    <input type="password" name="senha" id="senha" required> <br>
+
+    <label for="idade">Idade:</label>
+    <input type="number" name="idade" id="idade"> <br>
+
+    <label for="telefone">Telefone</label>
+    <input type="tel" name="telefone" id="telefone"> <br>
+
+    <label for="foto">Foto:</label>
+    <input type="file" accept=".jpg,.jpeg,.png" name="foto" id="foto"> <br>
+
+    <label for="dataNascimento">Data de Nascimento:</label>
+    <input type="date" name="dataNascimento" id="dataNascimento"> <br>
+
+    <label for="agendamento">Horário de Agendamento:</label>
+    <input type="time" name="agendamento" id="agendamento"> <br>
+
+    <label for="cor">Cor Favorita:</label>
+    <input type="color" name="cor" id="cor"> <br>
+
+    <label>Tipo de Conexão:</label>
+    <input type="radio" name="conexao" value="Fibra Optica" id="fibra" required>
+    <label for="fibra">Fibra Optica</label>
+
+    <input type="radio" name="conexao" value="Satelite" id="satelite" required>
+    <label for="satelite">Satelite</label>
+    <br>
+
+    <label>Recursos Adicionais:</label>
+    <input type="checkbox" name="streming" value="Streming de Video" id="streming">
+    <label for="streming">Streming de Video</label>
+
+    <input type="checkbox" name="musica" value="Spotify" id="musica">
+    <label for="musica">Spotify</label>
+    <br>
+
+    <label for="comentario">Comentário:</label>
+    <textarea name="comentario" id="comentario"></textarea> <br>
+
+    <label for="plano">Plano*:</label>
+    <select name="plano" id="plano" required>
+      <option disabled selected value="">Selecione um plano</option>
+      <option>Plano Pobre</option>
+      <option>Plano Rico</option>
+      <option>Plano Elon Musk</option>
+    </select> <br>
+
+    <button>Enviar</button>
+    <button type="reset">Limpar</button>
+    <button type="button">Reportar</button>
+  </form>
+
+</body>
+
+</html>
