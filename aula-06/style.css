@@ -1,0 +1,44 @@
+body main p {
+  font-size: 24px;
+  color: yellowgreen;
+}
+
+p {
+  text-align: center;
+  color: blue;
+  color: purple;
+}
+
+#foto {
+  border-radius: 50%;
+}
+
+.foto {
+  border-radius: 10%;
+}
+
+.galeria {
+  border: 5px solid hotpink;
+}
+
+#btn-teste {
+  border: none;
+  background: silver;
+  color: gray;
+  font-size: 24px;
+}
+
+#btn-teste:hover {
+  background: #de66de;
+  color: #ff00f7;
+  transform: scale(1.05);
+}
+
+#btn-teste:active {
+  background: tomato;
+  color: red;
+}
+
+body {
+  font-family: Arial;
+}
