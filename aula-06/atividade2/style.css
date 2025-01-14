@@ -1,0 +1,27 @@
+p {
+  color: gray;
+}
+
+#titulo-principal {
+  color: blue;
+}
+
+.vermelho-item {
+  color: red;
+}
+
+.verde-item {
+  color: green;
+}
+
+.azul-item {
+  color: blue;
+}
+
+p a:hover {
+  color: orange;
+}
+
+p button:active {
+  background: purple;
+}
