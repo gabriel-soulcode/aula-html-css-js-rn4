@@ -1,0 +1,27 @@
+.container {
+  width: 80%;
+  border: 2px dashed black;
+  margin: 0px auto;
+}
+
+.caixa1, .caixa2, .caixa3 {
+  width: 30%;
+  height: 150px;
+  display: inline-block;
+  padding: 20px;
+  margin: 10px;
+  box-sizing: border-box;
+  overflow: auto;
+}
+
+.caixa1 {
+  border: 2px dashed red;
+}
+
+.caixa2 {
+  border: 2px dashed green;
+}
+
+.caixa3 {
+  border: 2px dashed blue;
+}
