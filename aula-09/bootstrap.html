@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bootstrap</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+
+<body class="pt-5">
+
+  <nav class="navbar bg-body-tertiary fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        Offcanvas navbar
+        <i class="bi bi-truck"></i>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+        aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link 2</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <div class="accordion" id="accordionExample">
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button text-success" type="button" data-bs-toggle="collapse"
+          data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+          Accordion Item #1 <i class="bi bi-wifi"></i>
+        </button>
+      </h2>
+      <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+          <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin
+          adds the appropriate classes that we use to style each element. These classes control the overall appearance,
+          as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or
+          overriding our default variables. It's also worth noting that just about any HTML can go within the
+          <code>.accordion-body</code>, though the transition does limit overflow.
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+          aria-expanded="false" aria-controls="collapseTwo">
+          Accordion Item #2
+        </button>
+      </h2>
+      <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+          <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin
+          adds the appropriate classes that we use to style each element. These classes control the overall appearance,
+          as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or
+          overriding our default variables. It's also worth noting that just about any HTML can go within the
+          <code>.accordion-body</code>, though the transition does limit overflow.
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+          data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+          Accordion Item #3
+        </button>
+      </h2>
+      <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+          <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin
+          adds the appropriate classes that we use to style each element. These classes control the overall appearance,
+          as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or
+          overriding our default variables. It's also worth noting that just about any HTML can go within the
+          <code>.accordion-body</code>, though the transition does limit overflow.
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="carouselExample" class="carousel slide">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img
+          src="https://images.unsplash.com/photo-1736182792109-2db1c298a703?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img
+          src="https://images.unsplash.com/photo-1736182792151-60304a1d443c?q=80&w=1171&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img
+          src="https://images.unsplash.com/photo-1694697438082-604472fc5252?q=80&w=1171&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          class="d-block w-100" alt="...">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <!-- Button trigger modal -->
+  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+    Launch demo modal
+  </button>
+
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          ...
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Prof. Gabriel</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contato</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Aulas</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" aria-disabled="true">Produtos</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <h1>Bootstrap</h1>
+
+  <button class="btn btn-primary">Curtir Bootstrap</button>
+  <button class="btn btn-outline-primary">Botão Outline</button>
+
+  <br><br>
+
+  <div class="alert alert-primary">
+    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi necessitatibus animi eius reprehenderit asperiores!
+    Fugiat accusamus necessitatibus dicta, id repellendus et aliquam inventore enim fugit ratione vero ducimus minus
+    neque.
+  </div>
+
+  <div class="dropdown">
+    <button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+      Menu
+    </button>
+    <ul class="dropdown-menu">
+      <li><a class="dropdown-item" href="#">Sobre</a></li>
+      <li><a class="dropdown-item" href="#">Preços</a></li>
+      <li><a class="dropdown-item" href="#">Suporte</a></li>
+      <li><a class="dropdown-item" href="#">Termos</a></li>
+    </ul>
+  </div>
+
+  <div class="card" style="width: 18rem;">
+    <img class="card-img-top"
+      src="https://imagens.ebc.com.br/buQxBK-nuu_bWA9NBMaSYZ48U-8=/1170x700/smart/https://agenciabrasil.ebc.com.br/sites/default/files/thumbnails/image/2024/10/08/furacao_milton1.jpg?itok=n7bHpWi2"
+      alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Card title</h5>
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+        content.</p>
+      <a href="#" class="btn btn-primary">Go somewhere</a>
+    </div>
+  </div>
+
+  <button type="button" class="btn btn-primary" id="liveToastBtn">Show live toast</button>
+
+  <div class="toast-container position-fixed bottom-0 end-0 p-3">
+    <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+      <div class="toast-header">
+        <img src="..." class="rounded me-2" alt="...">
+        <strong class="me-auto">Bootstrap</strong>
+        <small>11 mins ago</small>
+        <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+      </div>
+      <div class="toast-body">
+        Hello, world! This is a toast message.
+      </div>
+    </div>
+  </div>
+
+  <nav aria-label="Page navigation example">
+    <ul class="pagination">
+      <li class="page-item">
+        <a class="page-link" href="#" aria-label="Previous">
+          <span aria-hidden="true">&laquo;</span>
+        </a>
+      </li>
+      <li class="page-item"><a class="page-link" href="#">1</a></li>
+      <li class="page-item"><a class="page-link" href="#">2</a></li>
+      <li class="page-item"><a class="page-link" href="#">3</a></li>
+      <li class="page-item">
+        <a class="page-link" href="#" aria-label="Next">
+          <span aria-hidden="true">&raquo;</span>
+        </a>
+      </li>
+    </ul>
+  </nav>
+
+  <div class="spinner-border text-danger" role="status">
+    <span class="visually-hidden">Loading...</span>
+  </div>
+
+
+  <p class="bg-danger text-white container">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla adipisci provident ipsam eligendi fugit? Soluta
+    explicabo in autem eum provident tempore minus, vel sint quo? Adipisci quia consequatur magnam quos.
+  </p>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+
+  <script>
+    const toastTrigger = document.getElementById('liveToastBtn')
+    const toastLiveExample = document.getElementById('liveToast')
+
+    if (toastTrigger) {
+      const toastBootstrap = bootstrap.Toast.getOrCreateInstance(toastLiveExample)
+      toastTrigger.addEventListener('click', () => {
+        toastBootstrap.show()
+      })
+    }
+  </script>
+</body>
+
+</html>
