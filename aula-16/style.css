@@ -1,0 +1,12 @@
+.msg {
+  font-family: Arial, sans-serif;
+  border: 2px solid blue;
+  color: blue;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.erro {
+  border-color: red;
+  color: red;
+}

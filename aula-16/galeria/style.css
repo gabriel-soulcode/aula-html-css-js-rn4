@@ -1,0 +1,18 @@
+.galeria {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.img-option {
+  width: 30%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.img-main {
+  flex: 1;
+  height: 400px;
+  object-fit: cover;
+}
