@@ -1,0 +1,8 @@
+{
+  "nome": "max",
+  "idade": 8,
+  "endereco": {
+    "rua": "Rua Aqui Perto"
+  },
+  "registros": [1, 2, 5, 7]
+}
