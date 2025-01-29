@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Atividade DOM</title>
+</head>
+<body>
+  <div id="texto">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia iusto libero porro voluptates distinctio rem eligendi tempora optio, atque, nostrum quaerat. Voluptates aut sint eos ipsam recusandae ratione maxime nulla.
+  </div>
+  <button id="btn-text">Atualizar Texto</button>
+
+  <br><br>
+
+  <p id="paragrafo">
+    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio soluta tempore asperiores ad. Aliquid aliquam voluptatibus autem, rerum nisi sit quam. Explicabo perferendis fuga doloribus? Quasi iusto similique quaerat hic?
+  </p>
+  <button id="btn-contraste">
+    Constraste
+  </button>
+  
+  <br><br>
+
+  <ul id="lista">
+    <li>Item 1</li>
+    <li>Item 2</li>
+    <li>Item 3</li>
+    <li>Item 4</li>
+  </ul>
+  <button id="btn-item">
+    Novo Item
+  </button>
+
+  <br><br>
+
+  <style>
+    td, th {
+      border: 2px solid gray;
+      padding: 5px 10px;
+    }
+  </style>
+  <table style="border-collapse: collapse;">
+    <thead>
+      <tr>
+        <th>Aluno</th>
+        <th>N1</th>
+        <th>N2</th>
+      </tr>
+    </thead>
+    <tbody id="linhas">
+      <tr>
+        <td>João</td>
+        <td>8.0</td>
+        <td>7.0</td>
+      </tr>
+      <tr>
+        <td>Maria</td>
+        <td>9.0</td>
+        <td>9.5</td>
+      </tr>
+      <tr>
+        <td>Ana</td>
+        <td>10.0</td>
+        <td>8.0</td>
+      </tr>
+    </tbody>
+  </table>
+  <button id="btn-remover">Remover</button>
+
+  <br><br>
+
+  <img id="imagem" width="300" src="https://images.unsplash.com/photo-1496181133206-80ce9b88a853?q=80&w=1171&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Computador">
+  <br>
+  <button id="btn-ocultar">Ocultar</button>
+  <button id="btn-mostrar">Mostrar</button>
+
+  <script src="./atividade.js"></script>
+</body>
+</html>
