@@ -14,14 +14,25 @@ async function buscarEstadosBR() {
 
 buscarEstadosBR();
 
+// Ao clicar no botão o programa deve pesquisar as cidades
+// referentes a UF de entrada do usuario
+// utilize as funções fetch e json para obter os dados
+// das cidades e mostre na lista de cidades.
+
 const inputUF = document.querySelector("#uf");
 const btnConsulta = document.querySelector("#btn");
 const listaCidades = document.querySelector("#cidades");
 
-/// ao clicar no botão execute o seguinte comando para pegar a UF
-const uf = inputUF.value;
+btnConsulta.addEventListener("click", async () => {
+  const uf = inputUF.value;
+  const url = `https://servicodados.ibge.gov.br/api/v1/localidades/estados/${uf}/municipios`;
+  listaCidades.textContent = "Carregando...";
 
-// ao clicar no botão o programa deve pesquisar as cidades
-// referentes a UF de entrada do usuario
-// utilize as funções fetch e json para obter os dados
-// das cidades e mostre na lista de cidades.
+  const resposta = await fetch(url);
+  const cidades = await resposta.json();
+
+  listaCidades.innerHTML = "";
+  for (const cidade of cidades) {
+    listaCidades.innerHTML += `<li>${cidade.nome}</li>`;
+  }
+});
